@@ -1,0 +1,14 @@
+.form_annonce {
+	display: flex;
+	flex-direction: column;
+}
+
+.input_select {
+	width: 10%;
+}
+
+.input_form {
+	border: 1px solid #70C63F;
+	width: 50%;
+	background-color: #C5EFF7;
+}
