@@ -17,7 +17,7 @@ class AnnoncesController < ApplicationController
     	@annonce = Annonce.find(params[:id])
  	end	
  	def result
- 		@annonces = Annonce.search(params[:search])
+ 		@annonces = Annonce.search(params[:search], params[:code_postal])
  	end
 	private
 	  def annonce_params

@@ -3,10 +3,11 @@
 	<%= link_to 'Déposer une annonce', new_annonce_path, :class => "lien_nav" %>
 	<div class="search">	
 		<%= form_tag '/result', :method => 'get' do %>
-		<p>
-    	<%= select_tag :search,options_for_select([ "Fruits", "Légumes", "Autres" ], params[:search]) %>
-   		<%= submit_tag "Chercher", :name => nil %>
-		</p>
+			<p>
+	    	<%= select_tag :search,options_for_select([ "Tout", "Fruits", "Légumes", "Autres" ], params[:search]) %>
+	    	<%= select_tag :code_postal,options_for_select([ "Partout", "Nord", "Ouest", "Est", "Sud" ], params[:code_postal]) %>
+	   		<%= submit_tag "Chercher", :name => nil %>
+			</p>
 		<% end %>
 	</div>
 </nav>	
