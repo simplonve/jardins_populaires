@@ -1,0 +1,10 @@
+.dernieres_annonces{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.classement {
+	margin: 0;
+	width: 33%;
+}

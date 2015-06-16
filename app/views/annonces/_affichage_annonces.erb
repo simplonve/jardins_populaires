@@ -1,6 +1,7 @@
-Liste des annonces
+<h3>Les trois dernières annonces deposées</h3>
+<div class="dernieres_annonces">
 <% @annonces.each do |annonce| %>
-	<div>
+	<div class="classement">
 		<%= annonce.categorie %><br>
 		<%= annonce.titre %><br>
 		<%= annonce.code_postal %><br>
@@ -9,3 +10,4 @@ Liste des annonces
 		<%= annonce.commentaire %><br>
 	</div>
 <% end %>
+</div>
