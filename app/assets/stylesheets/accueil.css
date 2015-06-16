@@ -4,15 +4,11 @@
 	background-size: cover;
 }
 
-.titre{
-	display: flex;
-	float: right;
-}
-
 .intro {
 	display: flex;
-	float: right;
 	flex-direction: column;
 	font-size: 1.5em;
-	text-align: center;
+	align-items: center;
+	background-color: #70C63F;
+	margin-top: -5px;
 }
