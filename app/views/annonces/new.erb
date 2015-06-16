@@ -27,7 +27,7 @@
 	    </div>
 	    <div>
 	    	<%= f.label :"date de disponibilité :" %>
-	    	<%= f.date_select(:dispo, :order => [:day, :month, :year]) %>
+	    	<%= f.date_select(:dispo, :order => [:day, :month, :year], :use_month_names => [t(:Janvier), t(:Février), t(:Mars), t(:Avril), t(:Mai), t(:Juin), t(:Juillet), t(:Août), t(:Septembre), t(:Octobre), t(:Novembre), t(:Décembre)]) %>
 	    </div>
 	    <div>
 	    	<%= f.submit 'Valider' %>
