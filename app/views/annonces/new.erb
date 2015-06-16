@@ -2,15 +2,15 @@
 
 <%= form_for :annonce, url: annonces_path  do |f| %>
 	    <%= f.label :catégorie %>
-	    <%= f.select :categorie, ["fruits", "légumes", "autres"] %>
+	    <%= f.select :categorie, ["fruits", "légumes", "autres"] %><br>
 	    <%= f.label :"titre" %>
-	    <%= f.text_area :titre%>
+	    <%= f.text_area :titre%><br>
 	    <%= f.label :"code postal" %>
-	    <%= f.text_area :code_postal %>
+	    <%= f.text_area :code_postal %><br>
 	    <%= f.label :"adresse e-mail" %>
-	    <%= f.text_area :adresse %>
+	    <%= f.text_area :adresse %><br>
 	    <%= f.label :quantité %>
-	    <%= f.text_area :quantite %>
+	    <%= f.text_area :quantite %><br>
 	    <%= f.label :"commentaire" %>
 	    <%= f.text_area :commentaire %>
 
