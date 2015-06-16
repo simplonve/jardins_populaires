@@ -1,0 +1,7 @@
+.intro {
+	display: flex;
+	float: right;
+	flex-direction: column;
+	font-size: 1.5em;
+	text-align: center;
+}
