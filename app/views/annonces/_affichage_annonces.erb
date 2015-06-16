@@ -1,0 +1,11 @@
+Liste des annonces
+<% @annonces.each do |annonce| %>
+	<div>
+		<%= annonce.categorie %><br>
+		<%= annonce.titre %><br>
+		<%= annonce.code_postal %><br>
+		<%= annonce.adresse %><br>
+		<%= annonce.quantite %><br>
+		<%= annonce.commentaire %><br>
+	</div>
+<% end %>
