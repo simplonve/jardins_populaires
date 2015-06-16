@@ -16,6 +16,9 @@ class AnnoncesController < ApplicationController
 	def show
     	@annonce = Annonce.find(params[:id])
  	end	
+ 	def search
+ 		@fruits = Annonce.fruits
+ 	end
 	private
 	  def annonce_params
 	    params.require(:annonce).permit(:categorie,:titre,:code_postal,:adresse,:dispo,:quantite,:commentaire, :img, :don)

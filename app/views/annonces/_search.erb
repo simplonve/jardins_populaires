@@ -1,0 +1,8 @@
+
+<%= form_tag '/search', :method => 'get' do %>
+  <p>
+    <%= select_tag :search,options_for_select([ "Fruits", "Légumes", "Autres" ], params[:search]) %>
+    <%= submit_tag "Chercher", :name => nil %>
+  </p>
+<% end %>
+
