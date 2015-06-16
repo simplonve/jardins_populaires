@@ -1,4 +1,10 @@
-.form_annonce {
+.dernieres_annonces{
+	width: 100%;
 	display: flex;
-	float: left;
+	justify-content: space-around;
+}
+
+.classement {
+	margin: 0;
+	width: 33%;
 }
