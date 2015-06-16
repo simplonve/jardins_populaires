@@ -1,3 +1,14 @@
+.banniere {
+	width: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.titre{
+	display: flex;
+	float: right;
+}
+
 .intro {
 	display: flex;
 	float: right;
