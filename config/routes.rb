@@ -2,6 +2,6 @@ Rails.application.routes.draw do
   resources :annonces 
 
   root 'annonces#index'
-  get '/search', to: 'annonces#search'
+  get '/result', to: 'annonces#result'
 
 end

@@ -16,8 +16,8 @@ class AnnoncesController < ApplicationController
 	def show
     	@annonce = Annonce.find(params[:id])
  	end	
- 	def search
- 		@annonces = Annonce.where(categorie: params[:search])
+ 	def result
+ 		@annonces = Annonce.search(params[:search])
  	end
 	private
 	  def annonce_params

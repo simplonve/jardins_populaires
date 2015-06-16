@@ -2,7 +2,7 @@
 	<%= link_to 'Accueil', annonces_path, :class => "lien_nav" %>
 	<%= link_to 'Déposer une annonce', new_annonce_path, :class => "lien_nav" %>
 	<div class="search">	
-		<%= form_tag '/search', :method => 'get' do %>
+		<%= form_tag '/result', :method => 'get' do %>
 		<p>
     	<%= select_tag :search,options_for_select([ "Fruits", "Légumes", "Autres" ], params[:search]) %>
    		<%= submit_tag "Chercher", :name => nil %>
