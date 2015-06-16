@@ -11,7 +11,7 @@ class AnnoncesController < ApplicationController
   		end
   	end	
 	def index
-		@annonces = Annonce.all
+		@annonces = Annonce.last(3).reverse
 	end
 	def show
     	@annonce = Annonce.find(params[:id])
