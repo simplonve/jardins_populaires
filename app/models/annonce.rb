@@ -1,5 +1,5 @@
 class Annonce < ActiveRecord::Base
-	scope :fruits, -> {where(categorie: 'fruits')}
-	scope :legumes, -> {where(categorie: 'légumes')}
-	scope :autres, -> {where(categorie: 'autres')}
+	scope :fruits, -> {where(categorie: 'Fruits')}
+	scope :legumes, -> {where(categorie: 'Légumes')}
+	scope :autres, -> {where(categorie: 'Autres')}
 end
