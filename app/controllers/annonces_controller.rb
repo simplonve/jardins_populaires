@@ -17,7 +17,13 @@ class AnnoncesController < ApplicationController
     	@annonce = Annonce.find(params[:id])
  	end	
  	def search
- 		@fruits = Annonce.fruits
+ 		if params[:search] == 'Fruits'
+ 			@annonces = Annonce.fruits
+ 		elsif params[:search] == 'Légumes'
+ 			@annonces = Annonce.legumes
+ 		else
+ 			@annonces = Annonce.autres
+ 		end
  	end
 	private
 	  def annonce_params
