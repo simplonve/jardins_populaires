@@ -15,27 +15,16 @@ ActiveRecord::Schema.define(version: 20150616074050) do
 
   create_table "annonces", force: :cascade do |t|
     t.string   "categorie"
-    t.string   "sous_categorie"
     t.string   "titre"
     t.string   "code_postal"
     t.string   "adresse"
-    t.string   "dispo"
+    t.date     "dispo"
     t.string   "quantite"
     t.string   "commentaire"
     t.string   "img"
-    t.integer  "user_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
-
-  add_index "annonces", ["user_id"], name: "index_annonces_on_user_id"
-
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "tel"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "don"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

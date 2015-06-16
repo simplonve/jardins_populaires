@@ -1,0 +1,18 @@
+<h1>Nouvelle annonce</h1>
+
+<%= form_for :annonce, url: annonces_path  do |f| %>
+	    <%= f.label :catégorie %>
+	    <%= f.select :categorie, ["fruits", "légumes", "autres"] %>
+	    <%= f.label :"titre" %>
+	    <%= f.text_area :titre%>
+	    <%= f.label :"code postal" %>
+	    <%= f.text_area :code_postal %>
+	    <%= f.label :"adresse e-mail" %>
+	    <%= f.text_area :adresse %>
+	    <%= f.label :quantité %>
+	    <%= f.text_area :quantite %>
+	    <%= f.label :"commentaire" %>
+	    <%= f.text_area :commentaire %>
+
+	    <%= f.submit 'Valider' %>
+<% end %>
