@@ -6,4 +6,8 @@
 <%= @annonce.quantite %><br>
 <%= @annonce.commentaire %><br>
 
+<% if flash[:notice] %>
+	<div><%= flash[:notice] %></div>
+<% end %>
+
 
