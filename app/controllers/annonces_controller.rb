@@ -5,6 +5,7 @@ class AnnoncesController < ApplicationController
 	def create
 		@annonce = Annonce.new(annonce_params)
 		if @annonce.save
+			flash[:notice] = "Votre annonce a été déposée. Merci."
 			redirect_to @annonce
   		else
     		render 'new'

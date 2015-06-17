@@ -1,3 +1,14 @@
+@font-face{
+    font-family: 'IndieFlower';
+    src: url('IndieFlower/IndieFlower.eot');
+    src: url('IndieFlower/IndieFlower.eot?#iefix') format('embedded-opentype'),
+         url('IndieFlower/IndieFlower.woff') format('woff'),
+         url('IndieFlower/IndieFlower.ttf') format('truetype'),
+         url('IndieFlower/IndieFlower.svg#IndieFlower') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .banniere {
 	width: 100%;
 	background-attachment: fixed;
@@ -11,4 +22,5 @@
 	align-items: center;
 	background-color: #70C63F;
 	margin-top: -5px;
+	font-family: 'IndieFlower';
 }
