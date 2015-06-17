@@ -11,7 +11,7 @@
 	    </div>
 	    <div class="form_annonce">
 	    	<%= f.label :"code postal :" %>
-	    	<%= f.select( :code_postal, ["Nord", "Ouest", "Est", "Sud"], {}, {:class =>'input_select'}) %>
+	    	<%= f.text_field :code_postal, :class =>'input_select' %>
 	    </div>
 	    <div class="form_annonce">
 	    	<%= f.label :"adresse e-mail :" %>
