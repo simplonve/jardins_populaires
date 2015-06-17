@@ -1,3 +1,15 @@
-<% @annonces.each do |annonces| %>
-	<%= annonces.titre %>
-<% end %>
+<div class="result_annonces">
+	<% @annonces.each do |annonces| %>
+		<div class="classement_result">
+			<div class="code_postale">
+				<%= annonces.code_postal %>
+			</div>
+			<div class="titre_annonce">
+				<%= annonces.titre %>
+			</div>
+			<%= annonces.adresse %><br>
+			<%= annonces.quantite %><br>
+			<%= annonces.commentaire %>
+		</div>
+	<% end %>
+</div>

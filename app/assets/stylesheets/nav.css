@@ -13,14 +13,16 @@
 	color: rgba(236, 240, 241,1.0);
 }
 
-.lien_nav:hover {
-	background-color: rgba(39, 174, 96,1.0);
-}
-
 .search {
 	display: block;
 	text-decoration: none;
 	text-align: center;
 	padding: 10px 15px 10px 15px;
 	color: rgba(236, 240, 241,1.0);
+}
+
+#icone {
+	background-image: url('ico_accueil.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
