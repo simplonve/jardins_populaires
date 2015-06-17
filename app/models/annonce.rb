@@ -1,9 +1,8 @@
 class Annonce < ActiveRecord::Base
 	validates :titre, :adresse, :dispo, :quantite, presence: true
 	validates :code_postal, presence: true, length: { is: 5 }, :numericality => true
-
-	def self.search(search, code_postal)
-		if is_tout?(search)
+	def self.search(cat, code_postal)
+		if is_tout?(cat)
 			if is_partout?(code_postal)
 				all
 			else
@@ -11,14 +10,14 @@ class Annonce < ActiveRecord::Base
 			end
 		else
 			if is_partout?(code_postal)
-				all.where(categorie: search)
+				all.where(categorie: cat)
 			else
-				where(categorie: search, code_postal: code_postal)
+				where(categorie: cat, code_postal: code_postal)
 			end			
 		end
  	end
- 	def self.is_tout?(search)
- 		search == 'Tout'
+ 	def self.is_tout?(cat)
+ 		cat == 'Tout'
  	end
  	def self.is_partout?(code_postal)
  		code_postal == ''
