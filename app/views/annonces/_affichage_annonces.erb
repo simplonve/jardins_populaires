@@ -2,9 +2,13 @@
 <div class="dernieres_annonces">
 <% @annonces.each do |annonce| %>
 	<div class="classement">
+		<div class="code_postale">
+		<%= annonce.code_postal %>
+		</div>
 		<%= annonce.categorie %><br>
-		<%= annonce.titre %><br>
-		<%= annonce.code_postal %><br>
+		<div class="titre_annonce">
+			<%= annonce.titre %>
+		</div>
 		<%= annonce.adresse %><br>
 		<%= annonce.quantite %><br>
 		<%= annonce.commentaire %><br>
