@@ -1,15 +1,18 @@
 @font-face {
-    font-family: 'flower';
-    src: url('indieflower/IndieFlower.eot');
-    src: url('indieflower/IndieFlower.eot?#iefix') format('embedded-opentype'),
-         url('indieflower/IndieFlower.woff') format('woff'),
-         url('indieflower/IndieFlower.ttf') format('truetype'),
-         url('indieflower/IndieFlower.svg#IndieFlower') format('svg');
+    font-family: 'QUINB___';
+    src: url('QUINB___/QUINB___.eot');
+    src: url('QUINB___/QUINB___.eot?#iefix') format('embedded-opentype'),
+         url('QUINB___/QUINB___.woff') format('woff'),
+         url('QUINB___/QUINB___.ttf') format('truetype'),
+         url('QUINB___/QUINB___.svg#QUINB___') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 .banniere {
+	display: flex;
 	width: 100%;
-	background-attachment: fixed;
+	background-image: url('vergers_accueil.png');
+	background-size: cover;
+	padding-bottom: 28%;
 }
