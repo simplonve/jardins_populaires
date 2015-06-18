@@ -23,6 +23,7 @@ class AnnoncesController < ApplicationController
 
  	def result
  		@annonces = Annonce.search(params[:search], params[:code_postal])
+          @autres_categories = Annonce.search_other(params[:search], params[:code_postal])
  	end
 
 	private

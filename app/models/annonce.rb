@@ -11,7 +11,7 @@ class Annonce < ActiveRecord::Base
 			end
 		else
 			if is_partout?(code_postal)
-				all.where(categorie: cat).order(dispo: :asc)
+				where(categorie: cat).order(dispo: :asc)
 			else
 				where(categorie: cat, code_postal: code_postal).order(dispo: :asc)
 			end			
@@ -26,4 +26,9 @@ class Annonce < ActiveRecord::Base
  		code_postal == ''
  	end
 
+	def self.search_other(cat, code_postal)
+		if !is_tout?(cat) && !is_partout?(code_postal)
+			Annonce.find_by_sql("SELECT * FROM annonces WHERE annonces.code_postal = '#{code_postal}' AND annonces.categorie != '#{cat}' ORDER BY annonces.dispo DESC")
+		end
+	end
 end
