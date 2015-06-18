@@ -11,8 +11,14 @@
 
 .banniere {
 	display: flex;
+    float: left;
 	width: 100%;
 	background-image: url('vergers_accueil.png');
 	background-size: cover;
 	padding-bottom: 28%;
+}
+
+.intro {
+    float: left;
+    width: 100%;
 }

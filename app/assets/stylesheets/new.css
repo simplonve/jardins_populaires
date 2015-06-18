@@ -1,11 +1,19 @@
+.affichage{
+	margin-left: 2%;
+}
+
 .form_annonce {
 	display: flex;
 	flex-direction: column;
-	margin-left: 2%;
 }
 
 .input_select {
 	width: 10%;
+	margin-bottom: 1%;
+	box-shadow: 1px 1px 12px #555;
+}
+.input_select_date {
+	width: 5%;
 	margin-bottom: 1%;
 	box-shadow: 1px 1px 12px #555;
 }
@@ -20,7 +28,7 @@
 
 .validation {
 	font-size: 1em;
-	margin: 2% 0 0 2%;
+	padding: 1%;
 	border: 2px solid #C5EFF7;
 	border-radius: 10%;
 	box-shadow: 1px 1px 12px #555;

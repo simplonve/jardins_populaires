@@ -5,6 +5,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	float: left;
 }
 
 .classement_result {
@@ -18,7 +19,7 @@
 }
 
 .classement_result:hover {
-	transform: scale(1.05)
+	transform: scale(1.05);
 }
 
 .titre_annonce {
