@@ -5,7 +5,7 @@ class Annonce < ActiveRecord::Base
 	def self.search(cat, code_postal)
 		if is_tout?(cat)
 			if is_partout?(code_postal)
-				order(dispo: :asc)
+				all.order(dispo: :asc)
 			else
 				where(code_postal: code_postal).order(dispo: :asc)
 			end
