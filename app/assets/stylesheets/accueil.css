@@ -21,6 +21,7 @@
     font-family: 'QUINB___';
     font-size: 2em;
     padding: 5% 0 0 5%;
+    color: white;
 }
 .titre{
     font-family: 'QUINB___';
@@ -32,15 +33,51 @@
 .accueil_choix{
     width: 100%;
     display: flex;
-    min-height: 700px;
+    min-height: 517px;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 .accueil_depot{
     width: 50%;
     height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .accueil_search{
     width: 50%;
     height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.accueil_search h2{
+    height: 50%;
+}
+.accueil_depot h2{
+    margin-top: -10%;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'QUINB___';
+}
+
+.btn_search {
+    box-shadow: 1px 1px 12px #555;
+    background-color: white;
+    padding: 1%;
+    text-decoration: none;
+}
+
+.accueil_depot div{
+    padding: 2%;
+}
+.align_right{
+    text-align: right;
+    margin-right: 30%;
+}
+.align_right div{
+    padding: 1%;
 }

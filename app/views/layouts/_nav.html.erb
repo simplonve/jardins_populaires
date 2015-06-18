@@ -1,5 +1,13 @@
 <nav class= "navbar">
 	<%= link_to '', annonces_path, :class => "lien_nav", :id => "icone" %>
 	<%= link_to 'Proposez quelque chose', new_annonce_path, :class => "lien_nav" %>
-	<%= render "annonces/searchbar" %>
+	<div class="search">
+		<%= form_tag '/result', :method => 'get' do %>
+			<%= label_tag :"Quoi ?" %>
+			<%= select_tag :search,options_for_select([ "Tout", "Fruits", "Légumes", "Autres" ], params[:search]) %>
+			<%= label_tag :"Où ?" %>
+			<%= text_field_tag :code_postal, params[:code_postal], placeholder: 'Entrez un code postal' %>
+			<%= submit_tag "Chercher", :name => nil %>
+		<% end %>
+	</div>
 </nav>	
