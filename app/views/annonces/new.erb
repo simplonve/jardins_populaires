@@ -1,4 +1,4 @@
-<h2>Nouvelle annonce</h2S>
+<h2>Nouvelle annonce</h2>
 
 <%= form_for :annonce, url: annonces_path  do |f| %>
 	    <div class="form_annonce">
@@ -11,7 +11,7 @@
 	    </div>
 	    <div class="form_annonce">
 	    	<%= f.label :"code postal :" %>
-	    	<%= f.text_field :code_postal, :class =>'input_select' %>
+	    	<%= f.text_field :code_postal, :class =>'input_form' %>
 	    </div>
 	    <div class="form_annonce">
 	    	<%= f.label :"adresse e-mail :" %>
@@ -25,12 +25,14 @@
 	    	<%= f.label :"commentaire :" %>
 	    	<%= f.text_area :commentaire, :class =>"input_form" %>
 	    </div>
-	    <div>
+	    <div class="form_annonce">
 	    	<%= f.label :"date de disponibilité :" %>
-	    	<%= f.date_select(:dispo, :order => [:day, :month, :year], :use_month_names => [t(:Janvier), t(:Février), t(:Mars), t(:Avril), t(:Mai), t(:Juin), t(:Juillet), t(:Août), t(:Septembre), t(:Octobre), t(:Novembre), t(:Décembre)]) %>
+	    	<div>
+	    	<%= f.date_select :dispo, {:order => [:day, :month, :year], :use_month_names => [t(:Janvier), t(:Février), t(:Mars), t(:Avril), t(:Mai), t(:Juin), t(:Juillet), t(:Août), t(:Septembre), t(:Octobre), t(:Novembre), t(:Décembre)]}, {:class => 'input_select' } %>
+	    	</div>
 	    </div>
 	    <div>
-	    	<%= f.submit 'Valider' %>
+	    	<%= f.submit 'Valider', :class =>"validation" %>
 	    </div>	
 <% end %>
 
