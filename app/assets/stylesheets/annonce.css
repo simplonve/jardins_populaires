@@ -11,6 +11,7 @@
 	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
+	line-height: 150%;
 }
 
 .classement:hover {
