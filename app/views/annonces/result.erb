@@ -7,10 +7,13 @@
 			<div class="titre_annonce">
 				<%= annonces.titre %>
 			</div>
-			<%= annonces.adresse %><br>
+			<%= label_tag :"Quantité :" %>
 			<%= annonces.quantite %><br>
-			<%= annonces.commentaire %><br>
-			<%= annonces.dispo.strftime('%d/%m/%y') %><br>
+			<%= label_tag :"Date de disponibilité :" %>
+			<%= annonces.dispo.strftime('%d/%m/%y') %><br><br>
+			<%= annonces.commentaire %><br><br>
+			<%= label_tag :"Contact :" %>
+			<%= annonces.adresse %><br>
 		</div>
 	<% end %>
 </div>
