@@ -1,2 +1,17 @@
-<%= render "annonces/ecran_accueil" %>
-<%= render "annonces/affichage_annonces" %>
+<div class="accueil_container">
+	<div class="intro">
+		<p>Trop de fruits, mais pas assez de légumes ?</p>
+		<p>Troquez !</p>
+	</div>
+	<div class="titre">
+		<p>TROC DE JARDIN</p>
+	</div>
+	<div class="accueil_choix">
+		<div class= "accueil_depot">
+			<%= link_to 'Proposez quelque chose', new_annonce_path, :class => "lien_nav" %>
+		</div>
+		<div class= "accueil_search">
+			<%= render "annonces/searchbar" %>
+		</div>
+	</div>
+</div>

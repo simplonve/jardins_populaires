@@ -8,17 +8,39 @@
     font-weight: normal;
     font-style: normal;
 }
-
-.banniere {
-	display: flex;
-    float: left;
-	width: 100%;
-	background-image: url('vergers_accueil.png');
-	background-size: cover;
-	padding-bottom: 28%;
-}
-
-.intro {
-    float: left;
+.accueil_container{
+    background-image: url('vergers.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    float: left;
+}
+.intro{
+    width: 100%;
+    font-family: 'QUINB___';
+    font-size: 2em;
+    padding: 5% 0 0 5%;
+}
+.titre{
+    font-family: 'QUINB___';
+    font-size: 3em;
+    color: white;
+    padding: 5% 5% 0 0;
+    align-self: flex-end;
+}
+.accueil_choix{
+    width: 100%;
+    display: flex;
+    min-height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+.accueil_depot{
+    width: 50%;
+    height: 100%;
+}
+.accueil_search{
+    width: 50%;
+    height: 100%;
 }
