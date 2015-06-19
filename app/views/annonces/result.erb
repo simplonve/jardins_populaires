@@ -1,22 +1,25 @@
 <%= render "layouts/nav" %>
 
+
 <div class="result_annonces">
 	<% @annonces.each do |annonces| %>
-		<div class="classement_result">
-			<div class="code_postale">
-				<%= annonces.code_postal %>
+		<%= link_to annonce_path(annonces.id) do %>
+			<div class="classement_result">
+				<div class="code_postale">
+					<%= annonces.code_postal %>
+				</div>
+				<div class="titre_annonce">
+					<%= annonces.titre %>
+				</div>
+				<%= label_tag :"Quantité :" %>
+				<%= annonces.quantite %><br>
+				<%= label_tag :"Date de disponibilité :" %>
+				<%= annonces.dispo.strftime('%d/%m/%y') %><br><br>
+				<%= annonces.commentaire %><br><br>
+				<%= label_tag :"Contact :" %>
+				<%= annonces.adresse %><br>
 			</div>
-			<div class="titre_annonce">
-				<%= annonces.titre %>
-			</div>
-			<%= label_tag :"Quantité :" %>
-			<%= annonces.quantite %><br>
-			<%= label_tag :"Date de disponibilité :" %>
-			<%= annonces.dispo.strftime('%d/%m/%y') %><br><br>
-			<%= annonces.commentaire %><br><br>
-			<%= label_tag :"Contact :" %>
-			<%= annonces.adresse %><br>
-		</div>
+		<% end %>
 	<% end %>
 </div>
 

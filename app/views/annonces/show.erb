@@ -1,14 +1,20 @@
 <%= render "layouts/nav" %>
-<h3>Annonce</h3>
-<%= @annonce.categorie %><br>
-<%= @annonce.titre %><br>
-<%= @annonce.code_postal %><br>
-<%= @annonce.adresse %><br>
-<%= @annonce.quantite %><br>
-<%= @annonce.commentaire %><br>
+<h3>Détail Annonce</h3>
 
-<% if flash[:notice] %>
-	<div><%= flash[:notice] %></div>
-<% end %>
+<div class="classement_result">
+     <div class="code_postale">
+          <%= @annonce.code_postal %>
+     </div>
+     <div class="titre_annonce">
+          <%= @annonce.titre %>
+     </div>
+     <%= label_tag :"Quantité :" %>
+     <%= @annonce.quantite %><br>
+     <%= label_tag :"Date de disponibilité :" %>
+     <%= @annonce.dispo.strftime('%d/%m/%y') %><br><br>
+     <%= @annonce.commentaire %><br><br>
+     <%= label_tag :"Contact :" %>
+     <%= @annonce.adresse %><br>
+</div>
 
 
