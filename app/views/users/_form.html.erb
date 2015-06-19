@@ -1,0 +1,9 @@
+<%= form_for @user do |f| %>
+	<%= f.label :"email :" %>
+	<%= f.text_field :email, :class =>"input_form"%>
+	<%= f.label :"mot de passe" %>
+	<%= f.text_field :password, :class =>"input_form"%>
+	<%= f.label :"confirmation" %>
+	<%= f.text_field :password_confirmation, :class =>"input_form"%>
+	<%= f.submit 'Valider', :class =>"validation" %>
+<% end %>

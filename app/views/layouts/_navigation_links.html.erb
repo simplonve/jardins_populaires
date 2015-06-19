@@ -1,0 +1,5 @@
+<% if @current_user %>
+<%= link_to 'Se deconnecter', logout_path %>
+<% else %>
+<%= link_to "S'identifier", login_path %>
+<% end %>
