@@ -1,4 +1,5 @@
 <%= render "layouts/nav" %>
+
 <div class="result_annonces">
 	<% @annonces.each do |annonces| %>
 		<div class="classement_result">
@@ -19,6 +20,7 @@
 	<% end %>
 </div>
 
+<% if @autres_categories %>
 	<% @autres_categories.each do |annonces| %>
 		<div class="classement_result">
 			<div class="code_postale">
@@ -36,3 +38,4 @@
 			<%= annonces.adresse %><br>
 		</div>
 	<% end %>
+<% end %>
