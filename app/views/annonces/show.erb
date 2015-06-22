@@ -2,9 +2,6 @@
 <div class="result_annonces">
 	<h3>Annonce</h3>
 	<div class="classement_result">
-		<div class="code_postale">
-			<%= @annonce.code_postal %><br>
-		</div>
 		<div class="titre_annonce">
 			<%= @annonce.categorie %><br>
 		</div>
@@ -12,11 +9,17 @@
 		<%= @annonce.adresse %><br>
 		<%= @annonce.quantite %><br>
 		<%= @annonce.commentaire %><br>
+		<div class="code_postale">
+			<%= @annonce.code_postal %>
+		</div>
 		
 		<% if flash[:notice] %>
 			<div><%= flash[:notice] %></div>
 		<% end %>
 	</div>
 </div>
+
+
+<%= link_to "Back to search results", session[:search_results] %>
 
 

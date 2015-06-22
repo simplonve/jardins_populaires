@@ -9,10 +9,13 @@
 }
 
 .classement_result {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	margin: 15px;
 	padding: 5px;
-	width: 100%;
-	background-color: #6AB0E1;
+	width: 50%;
+	background-color: white;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
 	line-height: 150%;
@@ -23,7 +26,8 @@
 }
 
 .titre_annonce {
-	font-weight: bold;
+	font-family: 'QUINB___';
+	font-size: 2em;
 }
 
 .code_postale {

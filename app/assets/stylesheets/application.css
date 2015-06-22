@@ -18,13 +18,14 @@
 	.titre {
 	font-size: 1.5em;
 	font-family: 'QUINB___';
+	color: #70C63F;
 	}
 	.intro{
     width: 100%;
     font-family: 'QUINB___';
     font-size: 1em;
     padding: 5% 0 0 5%;
-    color: white;
+    color: #70C63F;
 	}
 	.accueil_container{
     padding-bottom: 160px;
@@ -82,13 +83,14 @@
 	.titre {
 	font-size: 1.5em;
 	font-family: 'QUINB___';
+	color: #70C63F;
 	}
 	.intro{
     width: 100%;
     font-family: 'QUINB___';
     font-size: 1em;
     padding: 5% 0 0 5%;
-    color: white;
+    color: #70C63F;
 	}
 	.accueil_container{
     padding-bottom: 160px;
@@ -146,13 +148,14 @@
 	.titre {
 	font-size: 2.5em;
 	font-family: 'QUINB___';
+	color: #70C63F;
 	}
 	.intro{
     width: 100%;
     font-family: 'QUINB___';
     font-size: 2em;
     padding: 5% 0 0 5%;
-    color: white;
+    color: #70C63F;
 	}
 	.accueil_container{
     padding-bottom: 160px;
@@ -208,13 +211,14 @@
 	.titre {
 	font-size: 3em;
 	font-family: 'QUINB___';
+	color: #70C63F;
 	}
 	.intro{
     width: 100%;
     font-family: 'QUINB___';
     font-size: 2em;
     padding: 5% 0 0 5%;
-    color: white;
+    color: #70C63F;
 	}
 	.accueil_container{
     padding-bottom: 10px;
@@ -257,13 +261,14 @@
 	.titre {
 	font-size: 4em;
 	font-family: 'QUINB___';
+	color: #70C63F;
 	}
 	.intro{
     width: 100%;
     font-family: 'QUINB___';
     font-size: 2em;
     padding: 5% 0 0 5%;
-    color: white;
+    color: #70C63F;
 	}
 }
 
