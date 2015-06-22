@@ -2,7 +2,8 @@
 	display: flex;
 	width: 100%;
 	float: left;
-	background-color: #70C63F;
+	background-color: #33B240;
+	font-family: 'Raleway-SemiBold';
 }
 
 .lien_nav {
@@ -11,6 +12,7 @@
 	text-align: center;
 	padding: 10px 15px 10px 15px;
 	color: rgba(236, 240, 241,1.0);
+	color:black;
 }
 
 #icone {
@@ -25,4 +27,5 @@
 	text-align: center;
 	padding: 10px 15px 10px 15px;
 	margin-left: auto;
+	color:black;
 }

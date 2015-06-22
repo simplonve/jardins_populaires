@@ -9,7 +9,7 @@ class AnnoncesController < ApplicationController
 			flash[:notice] = "Votre annonce a été déposée. Merci."
 			redirect_to @annonce
   		else
-    		    render 'new'
+    		render 'new'
   		end
   	end	
 

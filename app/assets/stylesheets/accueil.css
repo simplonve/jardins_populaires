@@ -1,13 +1,4 @@
-@font-face {
-    font-family: 'QUINB___';
-    src: url('QUINB___/QUINB___.eot');
-    src: url('QUINB___/QUINB___.eot?#iefix') format('embedded-opentype'),
-         url('QUINB___/QUINB___.woff') format('woff'),
-         url('QUINB___/QUINB___.ttf') format('truetype'),
-         url('QUINB___/QUINB___.svg#QUINB___') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 .accueil_container{
     background-image: url('vergers.png');
     background-size: cover;
@@ -18,16 +9,16 @@
 }
 .intro{
     width: 100%;
-    font-family: 'QUINB___';
+    font-family: 'Raleway-SemiBold';
     font-size: 2em;
-    padding: 5% 0 0 5%;
+    padding: 3% 0 0 5%;
     color: #70C63F;
 }
 .titre{
     font-family: 'QUINB___';
     font-size: 3em;
     color: #70C63F;
-    padding: 5% 5% 0 0;
+    padding: 7% 5% 0 0;
     align-self: flex-end;
 }
 .accueil_choix{
@@ -56,17 +47,17 @@
     height: 50%;
 }
 .accueil_depot h2{
-    margin-top: -10%;
+    margin-top: -30%;
 }
 
 h2 {
     font-size: 2em;
-    font-family: 'QUINB___';
+    font-family: 'Raleway-SemiBold';
 }
 
 .btn_search {
     box-shadow: 1px 1px 12px #555;
-    background-color: white;
+    background-color: #FFFFE0;
     padding: 1%;
     text-decoration: none;
 }

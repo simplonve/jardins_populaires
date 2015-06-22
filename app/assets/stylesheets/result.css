@@ -15,10 +15,10 @@
 	margin: 15px;
 	padding: 5px;
 	width: 50%;
-	background-color: white;
-	box-shadow: 1px 1px 12px #555;
+	background-color: #FFFFE0;
+	box-shadow: 1px 1px 2px #555;
 	text-align: justify;
-	line-height: 150%;
+	line-height: 180%;
 }
 
 .classement_result:hover {
@@ -26,7 +26,7 @@
 }
 
 .titre_annonce {
-	font-family: 'QUINB___';
+	font-family: 'Raleway-SemiBold';
 	font-size: 2em;
 }
 
@@ -36,5 +36,5 @@
 
 .liens{
 	text-decoration: none;
-	color: #000000;;
+	color: #000000;
 }

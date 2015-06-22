@@ -13,18 +13,46 @@
  *= require_tree .
  *= require_self
  */
+ 
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('Raleway-SemiBold/Raleway-SemiBold.eot');
+    src: url('Raleway-SemiBold/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('Raleway-SemiBold/Raleway-SemiBold.woff') format('woff'),
+         url('Raleway-SemiBold/Raleway-SemiBold.ttf') format('truetype'),
+         url('Raleway-SemiBold/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('Raleway-Regular/Raleway-Regular.eot');
+    src: url('Raleway-Regular/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Raleway-Regular/Raleway-Regular.woff') format('woff'),
+         url('Raleway-Regular/Raleway-Regular.ttf') format('truetype'),
+         url('Raleway-Regular/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'QUINB___';
+    src: url('QUINB___/QUINB___.eot');
+    src: url('QUINB___/QUINB___.eot?#iefix') format('embedded-opentype'),
+         url('QUINB___/QUINB___.woff') format('woff'),
+         url('QUINB___/QUINB___.ttf') format('truetype'),
+         url('QUINB___/QUINB___.svg#QUINB___') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @media screen and (max-width: 475px) {
 	.titre {
 	font-size: 1.5em;
-	font-family: 'QUINB___';
 	color: #70C63F;
 	}
 	.intro{
     width: 100%;
-    font-family: 'QUINB___';
     font-size: 1em;
-    padding: 5% 0 0 5%;
     color: #70C63F;
 	}
 	.accueil_container{
@@ -53,7 +81,6 @@
 	.classement {
 	padding: 5px;
 	width: 90%;
-	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	font-size: 0.8em;
 	text-align: justify;
@@ -71,7 +98,6 @@
 	margin: 15px;
 	padding: 5px;
 	width: 90%;
-	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
 	font-size: 0.8em;
@@ -82,14 +108,12 @@
 @media screen and (min-width: 475px) and (max-width: 550px) {
 	.titre {
 	font-size: 1.5em;
-	font-family: 'QUINB___';
 	color: #70C63F;
 	}
 	.intro{
     width: 100%;
-    font-family: 'QUINB___';
+  
     font-size: 1em;
-    padding: 5% 0 0 5%;
     color: #70C63F;
 	}
 	.accueil_container{
@@ -118,7 +142,6 @@
 	.classement {
 	padding: 5px;
 	width: 90%;
-	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	font-size: 0.8em;
 	text-align: justify;
@@ -136,7 +159,6 @@
 	margin: 15px;
 	padding: 5px;
 	width: 90%;
-	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
 	font-size: 0.8em;
@@ -147,14 +169,12 @@
 @media screen and (min-width: 550px) and (max-width: 768px) {
 	.titre {
 	font-size: 2.5em;
-	font-family: 'QUINB___';
 	color: #70C63F;
 	}
 	.intro{
     width: 100%;
-    font-family: 'QUINB___';
+  
     font-size: 2em;
-    padding: 5% 0 0 5%;
     color: #70C63F;
 	}
 	.accueil_container{
@@ -182,7 +202,6 @@
 	.classement {
 	padding: 5px;
 	width: 90%;
-	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
 	line-height: 150%;
@@ -199,7 +218,6 @@
 	margin: 15px;
 	padding: 5px;
 	width: 90%;
-	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
 	font-size: 1em;
@@ -210,14 +228,11 @@
 @media screen and (min-width: 768px) and (max-width: 1024px){
 	.titre {
 	font-size: 3em;
-	font-family: 'QUINB___';
 	color: #70C63F;
 	}
 	.intro{
     width: 100%;
-    font-family: 'QUINB___';
     font-size: 2em;
-    padding: 5% 0 0 5%;
     color: #70C63F;
 	}
 	.accueil_container{
@@ -231,7 +246,6 @@
 	.classement {
 	padding: 5px;
 	width: 90%;
-	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
 	line-height: 150%;
@@ -248,7 +262,6 @@
 	margin: 15px;
 	padding: 5px;
 	width: 90%;
-	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
 	font-size: 1em;
@@ -260,14 +273,11 @@
 @media screen and (min-width: 1024px) {
 	.titre {
 	font-size: 4em;
-	font-family: 'QUINB___';
 	color: #70C63F;
 	}
 	.intro{
     width: 100%;
-    font-family: 'QUINB___';
     font-size: 2em;
-    padding: 5% 0 0 5%;
     color: #70C63F;
 	}
 }
@@ -285,4 +295,5 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color:#6DC440;
+	font-family: 'Raleway-Regular'
 }
