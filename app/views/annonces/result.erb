@@ -3,7 +3,7 @@
 
 <div class="result_annonces">
 	<% @annonces.each do |annonces| %>
-		<%= link_to annonce_path(annonces.id) do %>
+		<%= link_to annonce_path(annonces.id), class: "liens"  do %>
 			<div class="classement_result">
 				<div class="code_postale">
 					<%= annonces.code_postal %>
@@ -15,30 +15,28 @@
 				<%= annonces.quantite %><br>
 				<%= label_tag :"Date de disponibilité :" %>
 				<%= annonces.dispo.strftime('%d/%m/%y') %><br><br>
-				<%= annonces.commentaire %><br><br>
-				<%= label_tag :"Contact :" %>
-				<%= annonces.adresse %><br>
+
 			</div>
 		<% end %>
 	<% end %>
-</div>
 
-<% if @autres_categories %>
-	<% @autres_categories.each do |annonces| %>
-		<div class="classement_result">
-			<div class="code_postale">
-				<%= annonces.code_postal %>
-			</div>
-			<div class="titre_annonce">
-				<%= annonces.titre %>
-			</div>
-			<%= label_tag :"Quantité :" %>
-			<%= annonces.quantite %><br>
-			<%= label_tag :"Date de disponibilité :" %>
-			<%= annonces.dispo.strftime('%d/%m/%y') %><br><br>
-			<%= annonces.commentaire %><br><br>
-			<%= label_tag :"Contact :" %>
-			<%= annonces.adresse %><br>
-		</div>
+	<% if @autres_categories %>
+		<h3>Les autres offres de la région</h2>
+		<% @autres_categories.each do |annonces| %>
+			<%= link_to annonce_path(annonces.id), class: "liens"  do %>
+				<div class="classement_result">
+					<div class="code_postale">
+						<%= annonces.code_postal %>
+					</div>
+					<div class="titre_annonce">
+						<%= annonces.titre %>
+					</div>
+					<%= label_tag :"Quantité :" %>
+					<%= annonces.quantite %><br>
+					<%= label_tag :"Date de disponibilité :" %>
+					<%= annonces.dispo.strftime('%d/%m/%y') %><br><br>
+				</div>
+			<% end %>
+		<% end %>
 	<% end %>
-<% end %>
+</div>

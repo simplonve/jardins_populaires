@@ -11,7 +11,7 @@
 .classement_result {
 	margin: 15px;
 	padding: 5px;
-	width: 33%;
+	width: 100%;
 	background-color: #6AB0E1;
 	box-shadow: 1px 1px 12px #555;
 	text-align: justify;
@@ -28,4 +28,9 @@
 
 .code_postale {
 	float: right;
+}
+
+.liens{
+	text-decoration: none;
+	color: #000000;;
 }
