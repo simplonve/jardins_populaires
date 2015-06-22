@@ -25,6 +25,8 @@ class AnnoncesController < ApplicationController
  		@annonces = Annonce.search(params[:search], params[:code_postal])
  		if @annonces.blank?
  			flash[:notice] = "Aucune annonce correspondante."
+ 		else
+ 			flash[:notice] = "Les autres offres dans la région :"		
  		end
         @autres_categories = Annonce.search_other(params[:search], params[:code_postal])
  	end

@@ -1,7 +1,4 @@
 <%= render "layouts/nav" %>
-	<% if flash[:notice] %>
-		<div><%= flash[:notice] %></div>
-	<% end %>
 <div class="result_annonces">
 	<% @annonces.each do |annonces| %>
 			<div class="classement_result">
@@ -22,7 +19,7 @@
 	<% end %>
 
 	<% if @autres_categories %>
-		<h3>Les autres offres de la région</h2>
+		<h3><%= flash[:notice] %></h2>
 		<% @autres_categories.each do |annonces| %>
 				<div class="classement_result">
 					<div class="titre_annonce">
