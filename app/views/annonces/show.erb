@@ -1,14 +1,22 @@
 <%= render "layouts/nav" %>
-<h3>Annonce</h3>
-<%= @annonce.categorie %><br>
-<%= @annonce.titre %><br>
-<%= @annonce.code_postal %><br>
-<%= @annonce.adresse %><br>
-<%= @annonce.quantite %><br>
-<%= @annonce.commentaire %><br>
-
-<% if flash[:notice] %>
-	<div><%= flash[:notice] %></div>
-<% end %>
+<div class="result_annonces">
+	<h3>Annonce</h3>
+	<div class="classement_result">
+		<div class="code_postale">
+			<%= @annonce.code_postal %><br>
+		</div>
+		<div class="titre_annonce">
+			<%= @annonce.categorie %><br>
+		</div>
+		<%= @annonce.titre %><br>
+		<%= @annonce.adresse %><br>
+		<%= @annonce.quantite %><br>
+		<%= @annonce.commentaire %><br>
+		
+		<% if flash[:notice] %>
+			<div><%= flash[:notice] %></div>
+		<% end %>
+	</div>
+</div>
 
 
