@@ -6,6 +6,8 @@
 	justify-content: space-around;
 	align-items: center;
 	float: left;
+	padding-top: 5%;
+	
 }
 
 .classement_result {
@@ -13,12 +15,12 @@
 	justify-content: center;
 	flex-direction: column;
 	margin: 15px;
-	padding: 5px;
+	padding: 0 5px 5px 2px;
 	width: 50%;
 	background-color: #FFFFE0;
 	box-shadow: 1px 1px 2px #555;
 	text-align: justify;
-	line-height: 180%;
+	line-height: 150%;
 }
 
 .classement_result:hover {
@@ -28,6 +30,7 @@
 .titre_annonce {
 	font-family: 'Raleway-SemiBold';
 	font-size: 2em;
+	line-height: 120%;
 }
 
 .code_postale {
@@ -37,4 +40,5 @@
 .liens{
 	text-decoration: none;
 	color: #000000;
+	line-height: 150%;
 }

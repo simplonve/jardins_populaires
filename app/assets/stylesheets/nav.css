@@ -2,30 +2,49 @@
 	display: flex;
 	width: 100%;
 	float: left;
-	background-color: #33B240;
 	font-family: 'Raleway-SemiBold';
 }
 
-.lien_nav {
-	display: block;
-	text-decoration: none;
-	text-align: center;
-	padding: 10px 15px 10px 15px;
-	color: rgba(236, 240, 241,1.0);
-	color:black;
+.menu {
+	padding: 18px 0;
 }
 
-#icone {
-	background-image: url('ico_accueil.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+nav ul ul {
+	display: none;
 }
-
-.search {
+nav ul li:hover > ul {
 	display: block;
-	text-decoration: none;
-	text-align: center;
-	padding: 10px 15px 10px 15px;
-	margin-left: auto;
-	color:black;
+}
+nav ul {
+	background: #33B240;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 10px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	width: 100%;
+}
+nav ul li {
+	float: left;
+}
+nav ul li:hover {
+	background: #6DC440;
+}
+nav ul li:hover a {
+	color: #fff;
+}
+nav ul li a {
+	display: block;
+	padding: 15px 35px;
+	color: rgba(44, 62, 80,1.0); text-decoration: none;
+}
+nav ul ul {
+	background: #33B240; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+	width: auto;
+}
+nav ul ul li {
+	float: none; 
+	position: relative;
 }
