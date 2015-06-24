@@ -3,23 +3,29 @@
 	<h2>Annonce</h2>
 	<div class="classement_result">
 		<div class="titre_annonce">
-			<%= @annonce.categorie %><br>
+			<%= @annonce.titre %><br>
 		</div>
-		<%= @annonce.titre %><br>
+		<p>Quantité : <%= @annonce.quantite %></p>
+		<p>Date de disponibilité : <%= @annonce.dispo.strftime('%d/%m/%y') %></p><br>
+		<p><%= @annonce.commentaire %></p><br>
 		<%= @annonce.adresse %><br>
-		<%= @annonce.quantite %><br>
-		<%= @annonce.commentaire %><br>
 		<div class="code_postale">
 			<%= @annonce.code_postal %>
-		</div>
-		
+			<%= @annonce.img %>
+		</div><br>	
 		<% if flash[:notice] %>
-			<div><%= flash[:notice] %></div>
+			<h2><%= flash[:notice] %></h2><br>
+			<button>
+				<a class="liens" href="/annonces"><h3>Retour à l'accueil</h3></a>
+			</button>
+		<% else %>
+			<button>
+				<a class="liens" href="javascript:history.back()"><h3>Retour à votre recherche</h3></a>
+			</button>
 		<% end %>
 	</div>
 </div>
 
 
-<%= link_to "Retour à votre recherche", session[:search_results], :class => 'btn_search' %>
 
 

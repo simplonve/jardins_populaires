@@ -7,13 +7,29 @@ class Annonce < ActiveRecord::Base
 			if is_partout?(code_postal)
 				all.order(dispo: :asc)
 			else
-				where(code_postal: code_postal).order(dispo: :asc)
+				if code_postal.length == 5
+					where(code_postal: code_postal).order(dispo: :asc)
+				else
+					Annonce.find_by_sql("
+						SELECT * 
+						FROM annonces 
+						WHERE annonces.code_postal LIKE '#{code_postal}%' 
+						ORDER BY annonces.dispo ASC")
+				end
 			end
 		else
 			if is_partout?(code_postal)
 				where(categorie: cat).order(dispo: :asc)
 			else
-				where(categorie: cat, code_postal: code_postal).order(dispo: :asc)
+				if code_postal.length == 5
+					where(categorie: cat, code_postal: code_postal).order(dispo: :asc)
+				else
+					Annonce.find_by_sql("
+						SELECT * 
+						FROM annonces 
+						WHERE annonces.code_postal LIKE '#{code_postal}%' AND annonces.categorie = '#{cat}'
+						ORDER BY annonces.dispo ASC")
+				end
 			end			
 		end
  	end
@@ -28,7 +44,22 @@ class Annonce < ActiveRecord::Base
 
 	def self.search_other(cat, code_postal)
 		if !is_tout?(cat) && !is_partout?(code_postal)
-			Annonce.find_by_sql("SELECT * FROM annonces WHERE annonces.code_postal = '#{code_postal}' AND annonces.categorie != '#{cat}' ORDER BY annonces.dispo DESC")
+			if code_postal.length == 5
+				Annonce.find_by_sql("
+					SELECT * 
+					FROM annonces 
+					WHERE annonces.code_postal = '#{code_postal}' AND annonces.categorie != '#{cat}' 
+					ORDER BY annonces.dispo ASC")
+			else
+				Annonce.find_by_sql("
+					SELECT * 
+					FROM annonces 
+					WHERE annonces.code_postal LIKE '#{code_postal}%' AND annonces.categorie != '#{cat}' 
+					ORDER BY annonces.dispo ASC")
+			end
 		end
 	end
+
 end
+
+

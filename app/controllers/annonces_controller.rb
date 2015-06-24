@@ -1,10 +1,12 @@
 class AnnoncesController < ApplicationController
 	def new
 		@annonce = Annonce.new
+		@villes = CodesPostauxEtCommune.all
 	end
 
 	def create
 		@annonce = Annonce.new(annonce_params)
+		@villes = CodesPostauxEtCommune.all
 		if @annonce.save
 			flash[:notice] = "Votre annonce a été déposée. Merci."
 			redirect_to @annonce
@@ -18,17 +20,12 @@ class AnnoncesController < ApplicationController
 	end
 
 	def show
-    	     @annonce = Annonce.find(params[:id])
+	    @annonce = Annonce.find(params[:id])
  	end	
 
- 	def result
+ 	def result		
  		@annonces = Annonce.search(params[:search], params[:code_postal])
- 		if @annonces.blank?
- 			flash[:notice] = "Aucune annonce correspondante."
- 		else
- 			flash[:notice] = "Les autres offres dans la région :"		
- 		end
-        @autres_categories = Annonce.search_other(params[:search], params[:code_postal])
+		@autres_categories = Annonce.search_other(params[:search], params[:code_postal])
  	end
 
 	private
