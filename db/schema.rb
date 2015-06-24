@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624112415) do
+ActiveRecord::Schema.define(version: 20150616074050) do
 
   create_table "annonces", force: :cascade do |t|
     t.string   "categorie"
@@ -25,12 +25,6 @@ ActiveRecord::Schema.define(version: 20150624112415) do
     t.boolean  "don"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "ville"
-  end
-
-  create_table "codes_postaux_et_communes", force: :cascade do |t|
-    t.string "NomMinPoste"
-    t.string "CodePostal"
   end
 
 end
