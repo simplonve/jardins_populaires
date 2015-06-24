@@ -1,15 +1,17 @@
 class AnnoncesController < ApplicationController
 	def new
 		@annonce = Annonce.new
+		@villes = CodesPostauxEtCommune.all
 	end
 
 	def create
 		@annonce = Annonce.new(annonce_params)
+		@villes = CodesPostauxEtCommune.all
 		if @annonce.save
 			flash[:notice] = "Votre annonce a été déposée. Merci."
 			redirect_to @annonce
   		else
-    		render 'new'
+    			render 'new'
   		end
   	end	
 
